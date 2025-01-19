@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2048 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="2135.64" height="136.95"/>
+    </clipPath>
+  </defs>
+  <g class="cls-3">
+    <g>
+      <polygon class="cls-1" points="128 23 128 106 106 128 21 128 0 107 0 22 22 0 105 0 128 23"/>
+      <polygon class="cls-1" points="256 23 256 106 234 128 149 128 128 107 128 22 150 0 233 0 256 23"/>
+      <polygon class="cls-1" points="384 23 384 106 362 128 277 128 256 107 256 22 278 0 361 0 384 23"/>
+      <polygon class="cls-1" points="512 23 512 106 490 128 405 128 384 107 384 22 406 0 489 0 512 23"/>
+      <polygon class="cls-1" points="640 23 640 106 618 128 533 128 512 107 512 22 534 0 617 0 640 23"/>
+      <polygon class="cls-1" points="768 23 768 106 746 128 661 128 640 107 640 22 662 0 745 0 768 23"/>
+      <polygon class="cls-1" points="896 23 896 106 874 128 789 128 768 107 768 22 790 0 873 0 896 23"/>
+      <polygon class="cls-1" points="1024 23 1024 106 1002 128 917 128 896 107 896 22 918 0 1001 0 1024 23"/>
+      <polygon class="cls-1" points="1152 23 1152 106 1130 128 1045 128 1024 107 1024 22 1046 0 1129 0 1152 23"/>
+      <polygon class="cls-1" points="1280 23 1280 106 1258 128 1173 128 1152 107 1152 22 1174 0 1257 0 1280 23"/>
+      <polygon class="cls-1" points="1408 23 1408 106 1386 128 1301 128 1280 107 1280 22 1302 0 1385 0 1408 23"/>
+      <polygon class="cls-1" points="1536 23 1536 106 1514 128 1429 128 1408 107 1408 22 1430 0 1513 0 1536 23"/>
+      <polygon class="cls-1" points="1664 23 1664 106 1642 128 1557 128 1536 107 1536 22 1558 0 1641 0 1664 23"/>
+      <polygon class="cls-1" points="1792 23 1792 106 1770 128 1685 128 1664 107 1664 22 1686 0 1769 0 1792 23"/>
+      <polygon class="cls-1" points="1920 23 1920 106 1898 128 1813 128 1792 107 1792 22 1814 0 1897 0 1920 23"/>
+      <polygon class="cls-1" points="2048 23 2048 106 2026 128 1941 128 1920 107 1920 22 1942 0 2025 0 2048 23"/>
+    </g>
+  </g>
+</svg>
