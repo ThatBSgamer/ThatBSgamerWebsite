@@ -1,9 +1,14 @@
 @import url("Styles/texts.css");
 
+@font-face {
+    font-family: 'jbm'; /*a name to be used later*/
+    src: url('Assets/JetBrainsMonoNL-Regular.ttf'); /*URL to font*/
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'jbm','JetBrains Mono', serif;
     color: white;
 }
 
