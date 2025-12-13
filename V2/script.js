@@ -49,7 +49,7 @@ function removeloader() {
 }
 setTimeout(removeloader,800)
 
-setTimeout(playstart,1600)
+setTimeout(playstart,1400)
 function playstart() {
 
     let split = SplitText.create(".mainpage", { type: "words, chars" });
