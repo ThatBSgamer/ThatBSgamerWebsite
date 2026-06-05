@@ -1,0 +1,164 @@
+.navBar {
+    perspective: 60cm;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5em;
+    z-index: 9999;
+    transition-duration: 0.3s;
+    background-image: linear-gradient(to bottom, #0000005d, #00000000);
+    backdrop-filter: blur(0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navOption {
+        
+        
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0.8em;
+        position: relative;
+        a {
+            border-radius: 10em;
+            padding: 0.3em;
+            transition-duration: 0.2s;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            position: relative;
+            img {
+                height: 80%;
+                pointer-events: none;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                bottom: 2px;
+                margin: auto;
+                transition: 0.2s;
+                filter: invert(0);
+                opacity: 0;
+            }
+            
+        }
+        .moreOptions {
+            transition-duration: 0.2s;
+            top: 150%;
+            transform-origin: top;
+            transform: scaleY(0);
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            min-width: 120%;
+            width: fit-content;
+            overflow: hidden;
+                a {
+                    border-radius: 0px;
+                    width: fit-content;
+                    padding-right: 0px;
+                    text-align: left;
+                    background-color: transparent;
+                    
+                    transform: translateX(-2em);
+                    img {
+                        max-height: 2em;
+                        transform: translateX(-2em);
+                        opacity: 0;
+                    }
+                }
+                a:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: -3em;
+                    width: 300%;
+                    border-bottom: solid 1px #00000067;
+                }
+                a:hover {
+                    cursor: pointer;
+                    transform: translateX(0px);
+                    img {
+                        transform: translateX(0px);
+                        opacity: 1;
+                    }
+                }
+                a:active {
+                    cursor: pointer;
+                    transform: translateX(1em);
+                    img {
+                        transform: translateX(2em);
+                        opacity: 1;
+                    }
+                }
+        }
+        
+        
+        
+        a:active {
+            transform: scale(0.8);
+        }
+    }
+    .navOption:hover, .open{
+        
+        a {
+            background-color: rgba(255, 255, 255, 1);
+            padding: 0.5em;
+            
+            padding-left: 4em;
+            padding-right: 4em;
+            color: black;
+            img {
+                filter: invert(1);
+                opacity: 1;
+            }
+        }
+        
+        .moreOptions {
+            background-color: white;
+            
+            border-radius: 1.2em;
+            transition-duration: 0.2s;
+            overflow: hidden;
+            transform: scaleY(1);
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            width: fit-content;
+            a {
+                background-color: transparent;
+                padding-right: 2em;
+                text-align: left;
+            }
+        }
+        
+    }
+    
+    .navOption:hover:has(.moreOptions a) {
+        border-radius: 0px;
+        border-top-left-radius: 1.2em;
+        border-top-right-radius: 1.2em;
+    }
+    .navOption:has(.moreOptions a)::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+    }
+    .navOption:hover:has(.moreOptions a)::before {
+        pointer-events: all;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: -100%;
+        right: 0px;
+    }
+
+}
+.navBar:hover {
+    backdrop-filter: blur(10px);
+}
+

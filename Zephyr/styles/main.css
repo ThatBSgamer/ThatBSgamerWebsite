@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #111;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-Regular';
+  src: url('../fonts/JetBrainsMono[wght].ttf') format('truetype-variations');
+  font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+* {
+    font-family: 'JetBrainsMono-Regular', 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    color: aqua;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+p { 
+    text-indent: 5ch; 
+    line-height: 2;
+    font-weight: 100;
+}
+
+@keyframes blinker {
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  99% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.BlinkingCursor {
+    position: relative;
+}
+
+.BlinkingCursor::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color: currentColor;
+    width: 1ch;
+    height: 0.2em;
+    animation: blinker 1.5s linear infinite;
+}
+
+.Petable {
+    position: absolute;
+    cursor: grab;
+    display: flex;
+    z-index: 1;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;   
+    user-select: none; 
+    /*background-color: #fff;*/
+    
+}
+.Petable:active {
+    cursor: grabbing;
+}
+.Petable ~ * {
+    transition: 0.2s transform;
+    transform-origin: bottom center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;   
+    user-select: none; 
+    
+}
+.Petable:active ~ * {
+    transform: scaleY(0.95);
+    transform-origin: bottom center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;   
+    user-select: none; 
+}
+.footer {
+    margin: 0;
+    margin-top: 4em;
+    overflow: scroll;
+    border: none;
+    
+    height: 16em;
+}

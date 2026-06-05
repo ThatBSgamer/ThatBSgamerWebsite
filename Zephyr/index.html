@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/aboutme.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zephyr's Void</title>
+    <link rel="icon" type="image/x-icon" href="/images/cube_87.png">
+    
+</head>
+
+<body>
+    <div style="height: 0; visibility: hidden;" id="top">nothing to see here</div>
+    <div class="navBar">
+        <div class="navOption">
+            <a href="" class="navBar-button">
+                <img src="icons/home.svg">Home
+                
+            </a>
+            <div class="moreOptions">
+                <a href="#top"><img src="icons/arrow.svg">Welcome</a>
+                <a href="#about_me"><img src="icons/arrow.svg">About Me</a>
+            </div>
+        </div>
+        <div class="navOption">
+            <a href="">
+                <img src="icons/globe.svg">Socials
+            </a>
+            <div class="moreOptions">
+            </div>
+        </div>
+        <div class="navOption">
+            <a href="">
+                <img src="icons/cube.svg">My projects
+            </a>
+            <div class="moreOptions">
+                <a><img src="icons/arrow.svg">Hello</a>
+                <a><img src="icons/arrow.svg">The fitness gram paser test is a multistep arobic</a>
+                <a><img src="icons/arrow.svg">Hello</a>
+            </div>
+        </div>
+    </div>
+    <div class="heroBackground"> 
+        <div class="heroContainer">
+            
+            <p id="hero_text_filled" class="heroFilledText">Zephyr's</p>
+            <video class="heroChar" id="hero_char" autoplay loop muted playsinline preload="auto">
+                 <!--Skip this for other browsers-->
+
+                <source src="videos/ZephyrFloat.webm" type="video/webm; codecs=vp9">
+
+                <img class="heroChar" src="images/ZephyrHeroImage.png" id="hero_char">
+            </video>
+            <p id="hero_text_outline" class="heroOutlineText">Zephyr's</p>
+            <p class="heroUpperText">Welcome to</p>
+            <p class="heroLowerText">Void</p>
+            <div class="SocialMediaIcons">
+                <a href="https://www.youtube.com/@zephyr_the_cyan_fox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@zephyr_the_fox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M24.562,7.613c-1.508-.983-2.597-2.557-2.936-4.391-.073-.396-.114-.804-.114-1.221h-4.814l-.008,19.292c-.081,2.16-1.859,3.894-4.039,3.894-.677,0-1.315-.169-1.877-.465-1.288-.678-2.169-2.028-2.169-3.582,0-2.231,1.815-4.047,4.046-4.047,.417,0,.816,.069,1.194,.187v-4.914c-.391-.053-.788-.087-1.194-.087-4.886,0-8.86,3.975-8.86,8.86,0,2.998,1.498,5.65,3.783,7.254,1.439,1.01,3.19,1.606,5.078,1.606,4.886,0,8.86-3.975,8.86-8.86V11.357c1.888,1.355,4.201,2.154,6.697,2.154v-4.814c-1.345,0-2.597-.4-3.647-1.085Z"></path>
+                    </svg>
+                </a>
+                <a href="https://twitch.tv/zephyrthefox_">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M8.5,2L3.143,7.357V26.643h6.429v5.357l5.357-5.357h4.286l9.643-9.643V2H8.5ZM26.714,15.929l-4.286,4.286h-4.286l-3.75,3.75v-3.75h-4.821V4.143H26.714V15.929Z"></path>
+                    <path d="M21.357 7.893H23.5V14.322H21.357z"></path>
+                    <path d="M15.464 7.893H17.607V14.322H15.464z"></path>
+                    </svg>
+                </a>
+                <a href="https://discord.gg/mtmBD6ZJp7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M26.413,6.536c-1.971-.902-4.052-1.543-6.189-1.904-.292,.523-.557,1.061-.793,1.612-2.277-.343-4.592-.343-6.869,0-.236-.551-.5-1.089-.793-1.612-2.139,.365-4.221,1.006-6.194,1.909C1.658,12.336,.596,17.987,1.127,23.558h0c2.294,1.695,4.861,2.984,7.591,3.811,.615-.827,1.158-1.704,1.626-2.622-.888-.332-1.744-.741-2.56-1.222,.215-.156,.425-.316,.628-.472,4.806,2.26,10.37,2.26,15.177,0,.205,.168,.415,.328,.628,.472-.817,.483-1.676,.892-2.565,1.225,.467,.918,1.011,1.794,1.626,2.619,2.732-.824,5.301-2.112,7.596-3.808h0c.623-6.461-1.064-12.06-4.46-17.025Zm-15.396,13.596c-1.479,0-2.702-1.343-2.702-2.994s1.18-3.006,2.697-3.006,2.73,1.354,2.704,3.006-1.192,2.994-2.699,2.994Zm9.967,0c-1.482,0-2.699-1.343-2.699-2.994s1.18-3.006,2.699-3.006,2.723,1.354,2.697,3.006-1.189,2.994-2.697,2.994Z"></path>
+                    </svg>
+                </a>
+                </div>
+        </div>
+        
+    </div>
+    
+    <div class="AboutMeContainer MoveInOnScroll">
+        <div style="display: flex; justify-content: center;">
+            <div class="Petable" style="top: 12%; width: 16%; height: 12%;"></div>
+            <img src="images/ZephyrChar.png" style="margin-right: 2em;">
+        </div>
+        <div class="AboutMeText" id="about_me">
+            <h1 class="BlinkingCursor Typed">About me</h1>
+            <p class="Typed"><br>Hello, I'm Zephyr, a programmer, content creator, and aspiring indie game developer. I mostly work on projects that I think are cool for other people to see or use.</p>
+        </div>
+    </div>
+
+    <iframe src="global/footer.html" class="footer"></iframe>
+</body>
+<script src="script.js"></script>
+<script src="mobile.js"></script>
+</html>

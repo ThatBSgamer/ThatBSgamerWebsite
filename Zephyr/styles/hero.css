@@ -1,0 +1,126 @@
+
+
+
+
+.heroBackground {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #00FFFF;
+    display: flex;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% -160%,rgba(0, 255, 255, 0.5) 0%, rgba(0, 148, 211, 0) 100%);
+    flex-direction: column;
+}
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    perspective: 20cm;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    * {
+        position: absolute;
+        perspective: 60cm;
+    }
+    p {
+        text-indent: 0;
+        line-height: normal;
+    }
+    .heroChar {
+        transition: transform 1s;
+        position: relative;
+        min-width: 70em;
+        max-width: 100vw;
+    }
+    .heroFilledText { 
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+        font-weight: 1000;
+        font-size: 19vmin;
+    }
+    .heroOutlineText {
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+        font-size: 19vmin;
+        font-weight: 1000;
+        -webkit-text-stroke: 0.2vw white;
+        color: transparent;
+        z-index: 2;
+    }
+    .heroUpperText{
+        transform: translateY(-3.5em);
+        font-size: 4vmin;
+        z-index: 2;
+    }
+    .heroLowerText{
+        transform: translateY(4em);
+        font-size: 4vmin;
+        z-index: 2;
+    }
+}
+.SocialMediaIcons{
+    display: flex;
+    position: absolute;
+    isolation: isolate;
+    width: 60vw;
+    max-width: 30em;
+    bottom: 10vh;
+    justify-content: space-between;
+    z-index: 2;
+    transform: translateY(0vw);
+    * {
+        color: #fff;
+        position: relative;
+    }
+    svg {
+        color: #fff;
+        fill: #fff;
+        transition: 0.2s transform;
+        width: 2em;
+    }
+    a {
+        width: 6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a:hover {
+        svg {
+            
+            transform: translateY(-0.5em);
+        }
+    }
+}
+.heroContainer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+  backdrop-filter: blur(400px);
+  -webkit-backdrop-filter: blur(400px); 
+  background-image: radial-gradient(circle at 50% -500%, transparent 50% , var(--bg-color) 50%);
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+}
+
+@media (max-width: 40em) {
+  .heroChar {
+    transform: translateX(13em);
+  }
+}
+
+@media (max-width: 10em) {
+  .SocialMediaIcons {
+    transform: translateY(13em);
+  }
+}

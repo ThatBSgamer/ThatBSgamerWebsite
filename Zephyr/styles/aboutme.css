@@ -1,0 +1,24 @@
+.AboutMeContainer {
+    position: relative;
+    max-width: 40em;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    perspective: 60cm;
+    transform: perspective(60cm);
+    
+    img {
+        width: 10em;
+    }
+    .AboutMeText {
+        margin: 1em;
+    }
+}
+@media screen and (max-width: 40em) {
+    .AboutMeContainer{
+        img {
+            display: none;
+        }
+    }
+    
+}
